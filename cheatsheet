@@ -1,0 +1,131 @@
+Navigation:
+
+cd [directory]: Change directory
+Example: cd /var/www (change to the "/var/www" directory)
+
+pwd: Print working directory
+Example: pwd (displays the current working directory, e.g., "/home/user")
+
+ls [options] [directory]: List directory contents
+Example: ls -l /var/log (lists files and directories in long format in the "/var/log" directory)
+
+mkdir [directory]: Create a directory
+Example: mkdir /opt/myapp (creates a directory named "myapp" in the "/opt" directory)
+
+rm [options] [file/directory]: Remove a file or directory
+Example: rm myfile.txt (removes a file named "myfile.txt")
+
+mv [options] [source] [destination]: Move or rename a file or directory
+Example: mv /tmp/oldfile.txt /home/user/newfile.txt (renames "/tmp/oldfile.txt" to "/home/user/newfile.txt")
+
+cp [options] [source] [destination]: Copy a file or directory
+Example: cp /var/log/nginx/access.log /tmp/backup/ (copies "/var/log/nginx/access.log" to the "/tmp/backup" directory)
+
+touch [file]: Create an empty file
+Example: touch /opt/myapp/app.log (creates an empty file named "app.log" in the "/opt/myapp" directory)
+
+File Operations:
+
+cat [file]: Display file contents
+Example: cat myfile.txt (displays the contents of the "myfile.txt" file)
+
+less [file]: View file contents (paged)
+Example: less largefile.log (view the contents of the "largefile.log" file, paged for easier reading)
+
+head [file]: Show the first lines of a file
+Example: head -n 10 mylogfile.log (displays the first 10 lines of the "mylogfile.log" file)
+
+tail [file]: Show the last lines of a file
+Example: tail -f /var/log/syslog (displays the last few lines of the "syslog" file and keeps the display updated with new lines)
+
+grep [pattern] [file]: Search for a pattern in a file
+Example: grep "error" mylogfile.log (searches for the word "error" in the "mylogfile.log" file)
+
+wc [file]: Count lines, words, and characters in a file
+Example: wc -l myfile.txt (displays the number of lines in the "myfile.txt" file)
+
+diff [file1] [file2]: Compare two files line by line
+Example: diff file1.txt file2.txt (compares "file1.txt" and "file2.txt" to display the differences between them)
+
+File Permissions:
+
+chmod [options] [permissions] [file]: Change file permissions
+Example: chmod 644 myfile.txt (sets the file permission of "myfile.txt" to read and write for the owner, and read-only for others)
+
+chown [options] [user:group] [file]: Change file ownership
+Example: chown root:admin mydir (changes the owner of the "mydir" directory to the user "root" and the group "admin")
+
+chgrp [options] [group] [file]: Change group ownership
+Example: chgrp staff myfile.txt (changes the group ownership of "myfile.txt" to the "staff" group)
+
+Process Management:
+
+ps [options]: Display running processes
+Example: ps -ef (displays a list of all running processes with detailed information)
+
+top: Monitor system activity and processes
+Example: top (displays real-time system information, including CPU usage, memory usage, and running processes)
+
+kill [options] [PID]: Terminate a process
+Example: kill 1234 (sends a termination signal to the process with PID 1234 to stop it)
+
+Package Management:
+
+apt-get [options] [command]: Package manager for Debian-based systems
+Example: apt-get install nginx (installs the "nginx" package from the default repository)
+
+yum [options] [command]: Package manager for Red Hat-based systems
+Example: yum update (updates all installed packages to their latest versions)
+
+Networking:
+
+ifconfig: Show network interface configuration
+Example: ifconfig eth0 (displays detailed information about the "eth0" network interface)
+
+ping [host]: Send ICMP echo request to a host
+Example: ping google.com (sends ICMP echo requests to the "google.com" host to check network connectivity)
+
+nslookup [host]: Query DNS server for IP address
+Example: nslookup example.com (performs a DNS lookup to retrieve the IP address of "example.com")
+
+ssh [user@host]: Secure shell remote login
+Example: ssh user@example.com (establishes a secure shell connection to the remote host "example.com" with the username "user")
+
+scp [file] [user@host:destination]: Securely copy files between hosts
+Example: scp myfile.txt user@example.com:/home/user/ (copies "myfile.txt" to the remote host "example.com" in the "/home/user" directory)
+
+User Management:
+
+useradd [options] [username]: Create a user
+Example: useradd -m -s /bin/bash john (creates a user named "john" with a home directory and the bash shell)
+
+passwd [username]: Change user password
+Example: passwd john (prompts for a new password for the user "john")
+
+usermod [options] [username]: Modify user account
+Example: usermod -aG sudo john (adds the user "john" to the "sudo" group)
+
+su [username]: Switch user
+Example: su john (switches the current user to "john" and prompts for the user's password)
+
+System Information:
+
+uname [options]: Display system information
+Example: uname -a (displays detailed system information, including the kernel version)
+
+df [options]: Show disk space usage
+Example: df -h (displays disk space usage in a human-readable format)
+
+free [options]: Display memory usage
+Example: free -m (displays memory usage in megabytes)
+
+uptime: Show system uptime
+Example: uptime (displays the current time, how long the system has been running, and the average system load)
+
+Archiving/Compression:
+
+tar [options] [archive-file] [files/directories]: Create or extract tar archives
+Example: tar -czvf archive.tar.gz folder (creates a compressed tar archive "archive.tar.gz" from the "folder" directory)
+
+zip [options] [archive-file] [files/directories]: Create or extract zip archives
+Example: zip -r archive.zip folder (creates a zip archive "archive.zip" from the "folder" directory)
