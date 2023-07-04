@@ -51,10 +51,14 @@ sed --> To find and replace strings in the code
 Example: 
 vi superheros
 sed 's/Iron/Copper/g'  superheros  --> Here s/ will substitute the Iron with Copper and g is global to change in multiple places in same file
-sed -i 's/Iron/Copper/g'  superheros   --> Here s/ will substitute the Iron with Copper and saves the superheros file
+sed -i 's/Iron/Copper/g'  superheros   --> Here s/ will substitute the Iron with Copper and saves the superheros file, -i will update the file
 sed -i 's/Watchmen//g' superheros  --> Simply substitues the Watchmen with blank line
 sed -i '/Wonder Woman/d' superheros --> Simply deletes Wonder Woman removing blank line
 
+sed -i '/^$/d' superheros  --> Anything starting means ^ and anything ending means $ and when used together ^$ means nothing in between will be deleted because we used 'd'
+sed -i '1d' superheroes  --> to remove the first line  
+sed -i '1,2d' superheroes  --> to remove first 2 lines
+sed -i 's/\t/ /g' superheroes  --> to substiute the tabs with space
 
 File Permissions:
 
