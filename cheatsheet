@@ -47,6 +47,15 @@ Example: wc -l myfile.txt (displays the number of lines in the "myfile.txt" file
 diff [file1] [file2]: Compare two files line by line
 Example: diff file1.txt file2.txt (compares "file1.txt" and "file2.txt" to display the differences between them)
 
+sed --> To find and replace strings in the code
+Example: 
+vi superheros
+sed 's/Iron/Copper/g'  superheros  --> Here s/ will substitute the Iron with Copper and g is global to change in multiple places in same file
+sed -i 's/Iron/Copper/g'  superheros   --> Here s/ will substitute the Iron with Copper and saves the superheros file
+sed -i 's/Watchmen//g' superheros  --> Simply substitues the Watchmen with blank line
+sed -i '/Wonder Woman/d' superheros --> Simply deletes Wonder Woman removing blank line
+
+
 File Permissions:
 
 chmod [options] [permissions] [file]: Change file permissions
